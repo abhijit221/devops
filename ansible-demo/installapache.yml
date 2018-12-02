@@ -1,0 +1,7 @@
+-  hosts: web
+   user: ec2-user
+   sudo:true
+   tasks:
+     - name: install apache
+	   become: true
+       command: yum http* install -y

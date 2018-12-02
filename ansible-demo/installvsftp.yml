@@ -1,0 +1,18 @@
+---
+- hosts: all
+  become: yes
+
+  tasks:
+   - name: NGINX | Installing NGINX
+     yum: name=vsftpd state=latest
+   - name: NGINX | Starting NGINX
+     service: name=vsftpd state=started
+
+
+
+
+
+
+
+
+ 
